@@ -122,18 +122,30 @@ article{
     padding: 3%;
 }
 
-.container {
-    display: grid;
-    grid-template-areas:
-    "image image image"
-    "image image image"
-    ;
-    grid-template-columns: 1fr 3fr;
-    gap: 5px;
-    background-color: #2196F3;
-    padding: 5px;
-  }
+.gallary li{
+    list-style: none;
+}
 
-  .image{
-    width: auto;
-  }
+.items{
+    text-decoration: none;
+}
+.ind1{
+    grid-area: a;
+}
+
+.gallary{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-gap: 2px;
+}
+
+.item{
+    position: relative;
+    overflow: hidden;
+}
+
+.item img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
